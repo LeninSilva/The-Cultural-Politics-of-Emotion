@@ -32,13 +32,13 @@
     },
     diagram: {
       title: 'Conclusion: what “just emotions” would and would not mean', w: 620,
-      zones: [{ x: 10, y: 38, w: 295, h: 165, label: 'Not' }, { x: 320, y: 38, w: 295, h: 165, label: 'But' }],
+      zones: [{ x: 10, y: 38, w: 295, h: 230, label: 'Not' }, { x: 320, y: 38, w: 295, h: 230, label: 'But' }],
       nodes: [
-        { id: 'a', x: 158, y: 90, w: 230, label: 'Justice = having the right feelings (virtue, fellow-feeling)', kind: 'a' },
-        { id: 'b', x: 158, y: 145, w: 230, label: 'Justice = detached reason (no feelings)', kind: 'a' },
-        { id: 'c', x: 468, y: 90, w: 230, label: 'Emotions are effects, investments in norms — involved in justice', kind: 'e' },
-        { id: 'd', x: 468, y: 145, w: 230, label: 'Leave room for feeling better; don’t make it the goal', kind: 'e' },
-        { id: 'x', x: 310, y: 265, w: 500, label: 'A good scar sticks out: work with and on the wounds rather than over them', kind: 'd' }
+        { id: 'a', x: 158, y: 105, w: 230, label: 'Justice = having the right feelings (virtue, fellow-feeling)', kind: 'a' },
+        { id: 'b', x: 158, y: 205, w: 230, label: 'Justice = detached reason (no feelings)', kind: 'a' },
+        { id: 'c', x: 468, y: 105, w: 230, label: 'Emotions are effects, investments in norms — involved in justice', kind: 'e' },
+        { id: 'd', x: 468, y: 205, w: 230, label: 'Leave room for feeling better; don’t make it the goal', kind: 'e' },
+        { id: 'x', x: 310, y: 335, w: 500, label: 'A good scar sticks out: work with and on the wounds rather than over them', kind: 'd' }
       ],
       edges: [{ from: 'a', to: 'c', dash: true }, { from: 'b', to: 'c', dash: true }, { from: 'c', to: 'x' }, { from: 'd', to: 'x' }],
       caption: 'Two failed models on the left; Ahmed’s alternative on the right.'

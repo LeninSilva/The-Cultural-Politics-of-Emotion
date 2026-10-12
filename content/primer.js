@@ -31,17 +31,17 @@
           { p: 'The book’s structure repays a minute before you start. Each chapter takes one family of emotion and shows a different part of the same mechanism.' },
           { diagram: {
             title: 'The shape of the book', w: 640,
-            zones: [{ x: 10, y: 10, w: 620, h: 110, label: 'Part A — How emotions work' }, { x: 10, y: 135, w: 620, h: 130, label: 'Part B — Emotions and the nation' }, { x: 10, y: 280, w: 620, h: 90, label: 'Part C — Feminism and the Afterword' }],
+            zones: [{ x: 10, y: 40, w: 620, h: 115, label: 'Part A — How emotions work' }, { x: 10, y: 170, w: 620, h: 125, label: 'Part B — Emotions and the nation' }, { x: 10, y: 310, w: 620, h: 125, label: 'Part C — Queer & feminist' }],
             nodes: [
-              { id: 'i', x: 90, y: 75, w: 120, label: 'Introduction', sub: 'emotions do things', kind: 'e' },
-              { id: '1', x: 250, y: 75, w: 120, label: 'Ch. 1 Pain', sub: 'surfaces made', kind: 'a' },
-              { id: '2', x: 410, y: 75, w: 120, label: 'Ch. 2 Hate', sub: 'economies', kind: 'b' },
-              { id: '3', x: 560, y: 75, w: 120, label: 'Ch. 3 Fear', sub: 'moving away', kind: 'b' },
-              { id: '4', x: 150, y: 205, w: 130, label: 'Ch. 4 Disgust', sub: 'stickiness', kind: 'c' },
-              { id: '5', x: 320, y: 205, w: 130, label: 'Ch. 5 Shame', sub: 'national ideals', kind: 'c' },
-              { id: '6', x: 490, y: 205, w: 130, label: 'Ch. 6 Love', sub: 'conditional', kind: 'c' },
-              { id: '7', x: 220, y: 330, w: 130, label: 'Ch. 7 Queer feelings', sub: 'orientation', kind: 'd' },
-              { id: '8', x: 400, y: 330, w: 130, label: 'Ch. 8 Feminism', sub: 'feeling collectively', kind: 'd' }
+              { id: 'i', x: 90, y: 110, w: 120, label: 'Introduction', sub: 'emotions do things', kind: 'e' },
+              { id: '1', x: 250, y: 110, w: 120, label: 'Ch. 1 Pain', sub: 'surfaces made', kind: 'a' },
+              { id: '2', x: 410, y: 110, w: 120, label: 'Ch. 2 Hate', sub: 'economies', kind: 'b' },
+              { id: '3', x: 560, y: 110, w: 120, label: 'Ch. 3 Fear', sub: 'moving away', kind: 'b' },
+              { id: '4', x: 150, y: 240, w: 130, label: 'Ch. 4 Disgust', sub: 'stickiness', kind: 'c' },
+              { id: '5', x: 320, y: 240, w: 130, label: 'Ch. 5 Shame', sub: 'national ideals', kind: 'c' },
+              { id: '6', x: 490, y: 240, w: 130, label: 'Ch. 6 Love', sub: 'conditional', kind: 'c' },
+              { id: '7', x: 220, y: 375, w: 130, label: 'Ch. 7 Queer feelings', sub: 'orientation', kind: 'd' },
+              { id: '8', x: 400, y: 375, w: 130, label: 'Ch. 8 Feminism', sub: 'feeling collectively', kind: 'd' }
             ],
             edges: [{ from: 'i', to: '1' }, { from: '1', to: '2' }, { from: '2', to: '3' }, { from: '3', to: '4', curve: 30 }, { from: '4', to: '5' }, { from: '5', to: '6' }, { from: '6', to: '7', curve: -30 }, { from: '7', to: '8' }],
             caption: 'Read in order, the chapters move from the body to the nation and then back to a politics of feeling that could be otherwise.'

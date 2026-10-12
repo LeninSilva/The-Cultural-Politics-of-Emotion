@@ -677,22 +677,22 @@
   CP.lineage = {
     title: 'Who Ahmed draws on, and for what', w: 700,
     zones: [
-      { x: 8, y: 36, w: 210, h: 330, label: 'Philosophy of emotion' }, { x: 226, y: 36, w: 210, h: 330, label: 'Psychoanalysis & Marx' },
-      { x: 444, y: 36, w: 248, h: 330, label: 'Feminist · queer · race · postcolonial' }
+      { x: 8, y: 36, w: 210, h: 420, label: 'Philosophy of emotion' }, { x: 226, y: 36, w: 210, h: 420, label: 'Psychoanalysis & Marx' },
+      { x: 444, y: 36, w: 248, h: 420, label: 'Feminist · queer · race' }
     ],
     nodes: [
-      { id: 'a', x: 113, y: 85, w: 170, label: 'Descartes · Hume · Spinoza', sub: 'contact, impressions, affect', kind: 'b' },
-      { id: 'b', x: 113, y: 160, w: 170, label: 'Sartre · Heidegger', sub: 'aboutness, shame, mood, fear', kind: 'b' },
-      { id: 'c', x: 113, y: 235, w: 170, label: 'Spelman · Jaggar · Solomon', sub: 'the “Dumb View”; cognitivism', kind: 'b' },
-      { id: 'd', x: 113, y: 310, w: 170, label: 'Darwin · Durkheim · Hochschild', sub: 'inside-out / outside-in', kind: 'ghost' },
-      { id: 'e', x: 331, y: 85, w: 170, label: 'Freud · Klein · Lacan', sub: 'displacement, ambivalence', kind: 'a' },
-      { id: 'f', x: 331, y: 160, w: 170, label: 'Marx', sub: 'circulation, fetishism', kind: 'a' },
-      { id: 'g', x: 331, y: 235, w: 170, label: 'Kristeva · Douglas', sub: 'abjection, dirt', kind: 'a' },
-      { id: 'h', x: 331, y: 310, w: 170, label: 'Austin · Derrida', sub: 'speech acts, iterability', kind: 'a' },
-      { id: 'i', x: 568, y: 85, w: 210, label: 'Butler · Berlant · Brown', sub: 'norms, attachment, wounds', kind: 'e' },
-      { id: 'j', x: 568, y: 160, w: 210, label: 'Fanon · Lorde · hooks · Bhabha', sub: 'race, anger, stereotype', kind: 'e' },
-      { id: 'k', x: 568, y: 235, w: 210, label: 'Sedgwick · Cvetkovich · Crimp', sub: 'shame, grief, queer public feeling', kind: 'e' },
-      { id: 'l', x: 568, y: 310, w: 210, label: 'Massumi · Leys · Wetherell', sub: 'the affect/emotion debate', kind: 'c' }
+      { id: 'a', x: 113, y: 110, w: 190, label: 'Descartes · Hume · Spinoza', sub: 'contact, impressions, affect', kind: 'b' },
+      { id: 'b', x: 113, y: 200, w: 190, label: 'Sartre · Heidegger', sub: 'aboutness, shame, mood, fear', kind: 'b' },
+      { id: 'c', x: 113, y: 290, w: 190, label: 'Spelman · Jaggar · Solomon', sub: 'the “Dumb View”; cognitivism', kind: 'b' },
+      { id: 'd', x: 113, y: 380, w: 190, label: 'Darwin · Durkheim · Hochschild', sub: 'inside-out / outside-in', kind: 'ghost' },
+      { id: 'e', x: 331, y: 110, w: 190, label: 'Freud · Klein · Lacan', sub: 'displacement, ambivalence', kind: 'a' },
+      { id: 'f', x: 331, y: 200, w: 190, label: 'Marx', sub: 'circulation, fetishism', kind: 'a' },
+      { id: 'g', x: 331, y: 290, w: 190, label: 'Kristeva · Douglas', sub: 'abjection, dirt', kind: 'a' },
+      { id: 'h', x: 331, y: 380, w: 190, label: 'Austin · Derrida', sub: 'speech acts, iterability', kind: 'a' },
+      { id: 'i', x: 568, y: 110, w: 225, label: 'Butler · Berlant · Brown', sub: 'norms, attachment, wounds', kind: 'e' },
+      { id: 'j', x: 568, y: 200, w: 225, label: 'Fanon · Lorde · hooks · Bhabha', sub: 'race, anger, stereotype', kind: 'e' },
+      { id: 'k', x: 568, y: 290, w: 225, label: 'Sedgwick · Cvetkovich · Crimp', sub: 'shame, grief, queer public feeling', kind: 'e' },
+      { id: 'l', x: 568, y: 380, w: 225, label: 'Massumi · Leys · Wetherell', sub: 'the affect/emotion debate', kind: 'c' }
     ],
     edges: [],
     caption: 'A rough sort, not a genealogy: most thinkers appear in several chapters. Click any name in the cards below for a full entry.'
