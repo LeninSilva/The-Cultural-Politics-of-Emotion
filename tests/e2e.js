@@ -90,7 +90,7 @@ const path = require('path');
   });
   await step('selection note', async () => {
     await page.evaluate(() => {
-      const p = document.querySelectorAll('.reader [data-pid]')[7]; const n = document.createTreeWalker(p, NodeFilter.SHOW_TEXT).nextNode();
+      const p = document.querySelectorAll('.reader [data-pid]')[6]; const n = document.createTreeWalker(p, NodeFilter.SHOW_TEXT).nextNode();
       const r = document.createRange(); r.setStart(n, 0); r.setEnd(n, Math.min(20, n.nodeValue.length)); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
       p.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
     });
@@ -139,7 +139,7 @@ const path = require('path');
   await step('filters', async () => {
     await go('#/terms'); await page.fill('[data-termfilter]', 'sticky'); await page.waitForTimeout(200);
     ok(await count('[data-termgrid] .card') >= 1, 'term filter');
-    await page.click('[data-cat="emotion"]'); ok(await count('[data-termgrid] .card') >= 1, 'term category');
+    await page.fill('[data-termfilter]', ''); await page.click('[data-cat="emotion"]'); await page.waitForTimeout(200); ok(await count('[data-termgrid] .card') >= 1, 'term category');
     await go('#/people'); await page.fill('[data-peoplefilter]', 'butler'); await page.waitForTimeout(200);
     ok(await count('[data-peoplegrid] .card') >= 1, 'people filter');
     await go('#/refs'); await page.fill('[data-reffilter]', 'butler'); await page.waitForTimeout(200);
