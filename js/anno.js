@@ -112,7 +112,10 @@
       A.wrap(el, g.start, g.end, function () { var s = document.createElement('span'); s.className = 'gloss'; s.setAttribute('data-gloss', g.key); s.tabIndex = 0; s.setAttribute('role', 'button'); return s; });
     });
     // 2. glossary links
+    var gr = ctx.glossMap[pid] || [];
     c.terms.forEach(function (r) {
+      // a term link inside a scholar-note anchor would swallow its clicks
+      if (gr.some(function (g) { return r.start < g.end && r.end > g.start; })) return;
       A.wrap(el, r.start, r.end, function () {
         var s = document.createElement('span'); s.className = r.kind === 'term' ? 'term-link' : 'person-link';
         s.setAttribute(r.kind === 'term' ? 'data-term' : 'data-person', r.id); s.tabIndex = 0; s.setAttribute('role', 'button'); return s;
