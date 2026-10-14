@@ -130,6 +130,7 @@
       h += '<h2 class="sec">The argument, step by step</h2>' + V.moves(c.argument.steps) + V.diagrams(c);
     } else h += V.diagrams(c);
     if (c.extra) h += V.blocks(c.extra);
+    if (c.club) h += '<h2 class="sec">From the book club — notes &amp; commentary</h2><div class="prose club">' + V.blocks(c.club) + '</div>';
     if (c.context) h += '<h2 class="sec">Where it is coming from</h2><div class="prose rich">' + (Array.isArray(c.context) ? c.context : [c.context]).map(function (p) { return '<p>' + rich(p) + '</p>'; }).join('') + '</div>';
     if (c.terms && c.terms.length) h += '<h2 class="sec">Key terms for this chapter</h2><div class="chips">' + V.chips(c.terms, 'term') + '</div><p class="muted small">Click any term for a graduate-level entry. Terms are also underlined inside the text itself.</p>';
     if (c.people && c.people.length) h += '<h2 class="sec">Who is in the room</h2><div class="chips">' + V.chips(c.people, 'person') + '</div>';
